@@ -1,0 +1,1117 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/AdeleD/react-paginate#readme"
+
+    >react-paginate (v4.3.1)</a>
+</h1>
+<h4>A ReactJS component that creates a pagination.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-paginate">module react-paginate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.react-paginate">
+            function <span class="apidocSignatureSpan"></span>react-paginate
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.containerClassName">
+            function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.containerClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.disableInitialCallback">
+            function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.disableInitialCallback
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.hrefBuilder">
+            function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.hrefBuilder
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.initialPage">
+            function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.initialPage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.previousLabel">
+            function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.previousLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-paginate.</span>defaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-paginate.</span>propTypes</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-paginate.propTypes">module react-paginate.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.activeClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>activeClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.breakClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>breakClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.breakLabel">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>breakLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.containerClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>containerClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.disableInitialCallback">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>disableInitialCallback
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.disabledClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>disabledClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.forcePage">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>forcePage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.hrefBuilder">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>hrefBuilder
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.initialPage">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>initialPage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.marginPagesDisplayed">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>marginPagesDisplayed
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.nextClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>nextClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.nextLabel">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>nextLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.nextLinkClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>nextLinkClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.onPageChange">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>onPageChange
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.pageClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>pageClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.pageCount">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>pageCount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.pageLinkClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>pageLinkClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.pageRangeDisplayed">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>pageRangeDisplayed
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.previousClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>previousClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.previousLabel">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>previousLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.previousLinkClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>previousLinkClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-paginate.propTypes.containerClassName">module react-paginate.propTypes.containerClassName</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.containerClassName.containerClassName">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>containerClassName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.containerClassName.isRequired">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.containerClassName.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-paginate.propTypes.disableInitialCallback">module react-paginate.propTypes.disableInitialCallback</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.disableInitialCallback.disableInitialCallback">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>disableInitialCallback
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.disableInitialCallback.isRequired">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.disableInitialCallback.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-paginate.propTypes.hrefBuilder">module react-paginate.propTypes.hrefBuilder</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.hrefBuilder.hrefBuilder">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>hrefBuilder
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.hrefBuilder.isRequired">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.hrefBuilder.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-paginate.propTypes.initialPage">module react-paginate.propTypes.initialPage</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.initialPage.initialPage">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>initialPage
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.initialPage.isRequired">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.initialPage.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-paginate.propTypes.previousLabel">module react-paginate.propTypes.previousLabel</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.previousLabel.previousLabel">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>previousLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-paginate.propTypes.previousLabel.isRequired">
+            function <span class="apidocSignatureSpan">react-paginate.propTypes.previousLabel.</span>isRequired
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-paginate" id="apidoc.module.react-paginate">module react-paginate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.react-paginate" id="apidoc.element.react-paginate.react-paginate">
+        function <span class="apidocSignatureSpan"></span>react-paginate
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PaginationBoxView(props) {
+  _classCallCheck(this, PaginationBoxView);
+
+  var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PaginationBoxView).call(this, props));
+
+  _this.handlePreviousPage = function (evt) {
+    evt.preventDefault ? evt.preventDefault() : evt.returnValue = false;
+    if (_this.state.selected &#x3e; 0) {
+      _this.handlePageSelected(_this.state.selected - 1, evt);
+    }
+  };
+
+  _this.handleNextPage = function (evt) {
+    evt.preventDefault ? evt.preventDefault() : evt.returnValue = false;
+    if (_this.state.selected &#x3c; _this.props.pageCount - 1) {
+      _this.handlePageSelected(_this.state.selected + 1, evt);
+    }
+  };
+
+  _this.handlePageSelected = function (selected, evt) {
+    evt.preventDefault ? evt.preventDefault() : evt.returnValue = false;
+
+    if (_this.state.selected === selected) return;
+
+    _this.setState({ selected: selected });
+
+    // Call the callback with the new selected item:
+    _this.callCallback(selected);
+  };
+
+  _this.callCallback = function (selectedItem) {
+    if (typeof _this.props.onPageChange !== &#x22;undefined&#x22; &#x26;&#x26; typeof _this.props.onPageChange === &#x22;function&#x22;) {
+      _this.props.onPageChange({ selected: selectedItem });
+    }
+  };
+
+  _this.pagination = function () {
+    var items = {};
+
+    if (_this.props.pageCount &#x3c;= _this.props.pageRangeDisplayed) {
+
+      for (var index = 0; index &#x3c; _this.props.pageCount; index++) {
+        items[&#x27;key&#x27; + index] = _this.getPageElement(index);
+      }
+    } else {
+
+      var leftSide = _this.props.pageRangeDisplayed / 2;
+      var rightSide = _this.props.pageRangeDisplayed - leftSide;
+
+      if (_this.state.selected &#x3e; _this.props.pageCount - _this.props.pageRangeDisplayed / 2) {
+        rightSide = _this.props.pageCount - _this.state.selected;
+        leftSide = _this.props.pageRangeDisplayed - rightSide;
+      } else if (_this.state.selected &#x3c; _this.props.pageRangeDisplayed / 2) {
+        leftSide = _this.state.selected;
+        rightSide = _this.props.pageRangeDisplayed - leftSide;
+      }
+
+      var _index = void 0;
+      var page = void 0;
+      var breakView = void 0;
+
+      for (_index = 0; _index &#x3c; _this.props.pageCount; _index++) {
+
+        page = _index + 1;
+
+        var pageView = _this.getPageElement(_index);
+
+        if (page &#x3c;= _this.props.marginPagesDisplayed) {
+          items[&#x27;key&#x27; + _index] = pageView;
+          continue;
+        }
+
+        if (page &#x3e; _this.props.pageCount - _this.props.marginPagesDisplayed) {
+          items[&#x27;key&#x27; + _index] = pageView;
+          continue;
+        }
+
+        if (_index &#x3e;= _this.state.selected - leftSide &#x26;&#x26; _index &#x3c;= _this.state.selected + rightSide) {
+          items[&#x27;key&#x27; + _index] = pageView;
+          continue;
+        }
+
+        var keys = Object.keys(items);
+        var breakLabelKey = keys[keys.length - 1];
+        var breakLabelValue = items[breakLabelKey];
+
+        if (_this.props.breakLabel &#x26;&#x26; breakLabelValue !== breakView) {
+          breakView = _react2.default.createElement(_BreakView2.default, {
+            breakLabel: _this.props.breakLabel,
+            breakClassName: _this.props.breakClassName
+          });
+
+          items[&#x27;key&#x27; + _index] = breakView;
+        }
+      }
+    }
+
+    return items;
+  };
+
+  _this.state = {
+    selected: props.initialPage ? props.initialPage : props.forcePage ? props.forcePage : 0
+  };
+  return _this;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.containerClassName" id="apidoc.element.react-paginate.propTypes.containerClassName">
+        function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.containerClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.containerClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.disableInitialCallback" id="apidoc.element.react-paginate.propTypes.disableInitialCallback">
+        function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.disableInitialCallback
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.disableInitialCallback = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.hrefBuilder" id="apidoc.element.react-paginate.propTypes.hrefBuilder">
+        function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.hrefBuilder
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.hrefBuilder = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.initialPage" id="apidoc.element.react-paginate.propTypes.initialPage">
+        function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.initialPage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.initialPage = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.previousLabel" id="apidoc.element.react-paginate.propTypes.previousLabel">
+        function <span class="apidocSignatureSpan">react-paginate.</span>propTypes.previousLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">propTypes.previousLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-paginate.propTypes" id="apidoc.module.react-paginate.propTypes">module react-paginate.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.activeClassName" id="apidoc.element.react-paginate.propTypes.activeClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>activeClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">activeClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.breakClassName" id="apidoc.element.react-paginate.propTypes.breakClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>breakClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">breakClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.breakLabel" id="apidoc.element.react-paginate.propTypes.breakLabel">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>breakLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">breakLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.containerClassName" id="apidoc.element.react-paginate.propTypes.containerClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>containerClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">containerClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.disableInitialCallback" id="apidoc.element.react-paginate.propTypes.disableInitialCallback">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>disableInitialCallback
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disableInitialCallback = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.disabledClassName" id="apidoc.element.react-paginate.propTypes.disabledClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>disabledClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disabledClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.forcePage" id="apidoc.element.react-paginate.propTypes.forcePage">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>forcePage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">forcePage = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.hrefBuilder" id="apidoc.element.react-paginate.propTypes.hrefBuilder">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>hrefBuilder
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hrefBuilder = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      this.setState({ selected: nextProps.forcePage });
+    }
+  }
+}, {
+  key: &#x27;hrefBuilder&#x27;,
+  value: function hrefBuilder(pageIndex) {
+    if (this.props.hrefBuilder &#x26;&#x26; pageIndex !== this.state.selected &#x26;&#x26; pageIndex &#x3e;= 0 &#x26;&#x26; pageIndex
+ &#x3c; this.props.pageCount) {
+      return this.props.<span class="apidocCodeKeywordSpan">hrefBuilder</span>(pageIndex + 1);
+    }
+  }
+}, {
+  key: &#x27;getPageElement&#x27;,
+  value: function getPageElement(index) {
+    return _react2.default.createElement(_PageView2.default, {
+      onClick: this.handlePageSelected.bind(null, index),
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.initialPage" id="apidoc.element.react-paginate.propTypes.initialPage">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>initialPage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialPage = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.marginPagesDisplayed" id="apidoc.element.react-paginate.propTypes.marginPagesDisplayed">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>marginPagesDisplayed
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">marginPagesDisplayed = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.nextClassName" id="apidoc.element.react-paginate.propTypes.nextClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>nextClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">nextClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.nextLabel" id="apidoc.element.react-paginate.propTypes.nextLabel">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>nextLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">nextLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.nextLinkClassName" id="apidoc.element.react-paginate.propTypes.nextLinkClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>nextLinkClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">nextLinkClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.onPageChange" id="apidoc.element.react-paginate.propTypes.onPageChange">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>onPageChange
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">onPageChange = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// Call the callback with the new selected item:
+_this.callCallback(selected);
+    };
+
+    _this.callCallback = function (selectedItem) {
+if (typeof _this.props.onPageChange !== &#x22;undefined&#x22; &#x26;&#x26; typeof _this.props.onPageChange === &#x22;function&#x22
+;) {
+  _this.props.<span class="apidocCodeKeywordSpan">onPageChange</span>({ selected: selectedItem });
+}
+    };
+
+    _this.pagination = function () {
+var items = {};
+
+if (_this.props.pageCount &#x3c;= _this.props.pageRangeDisplayed) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.pageClassName" id="apidoc.element.react-paginate.propTypes.pageClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>pageClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pageClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.pageCount" id="apidoc.element.react-paginate.propTypes.pageCount">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>pageCount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pageCount = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.pageLinkClassName" id="apidoc.element.react-paginate.propTypes.pageLinkClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>pageLinkClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pageLinkClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.pageRangeDisplayed" id="apidoc.element.react-paginate.propTypes.pageRangeDisplayed">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>pageRangeDisplayed
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pageRangeDisplayed = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.previousClassName" id="apidoc.element.react-paginate.propTypes.previousClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>previousClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">previousClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.previousLabel" id="apidoc.element.react-paginate.propTypes.previousLabel">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>previousLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">previousLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.previousLinkClassName" id="apidoc.element.react-paginate.propTypes.previousLinkClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>previousLinkClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">previousLinkClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-paginate.propTypes.containerClassName" id="apidoc.module.react-paginate.propTypes.containerClassName">module react-paginate.propTypes.containerClassName</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.containerClassName.containerClassName" id="apidoc.element.react-paginate.propTypes.containerClassName.containerClassName">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>containerClassName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">containerClassName = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.containerClassName.isRequired" id="apidoc.element.react-paginate.propTypes.containerClassName.isRequired">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.containerClassName.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-paginate.propTypes.disableInitialCallback" id="apidoc.module.react-paginate.propTypes.disableInitialCallback">module react-paginate.propTypes.disableInitialCallback</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.disableInitialCallback.disableInitialCallback" id="apidoc.element.react-paginate.propTypes.disableInitialCallback.disableInitialCallback">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>disableInitialCallback
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disableInitialCallback = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.disableInitialCallback.isRequired" id="apidoc.element.react-paginate.propTypes.disableInitialCallback.isRequired">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.disableInitialCallback.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-paginate.propTypes.hrefBuilder" id="apidoc.module.react-paginate.propTypes.hrefBuilder">module react-paginate.propTypes.hrefBuilder</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.hrefBuilder.hrefBuilder" id="apidoc.element.react-paginate.propTypes.hrefBuilder.hrefBuilder">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>hrefBuilder
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hrefBuilder = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      this.setState({ selected: nextProps.forcePage });
+    }
+  }
+}, {
+  key: &#x27;hrefBuilder&#x27;,
+  value: function hrefBuilder(pageIndex) {
+    if (this.props.hrefBuilder &#x26;&#x26; pageIndex !== this.state.selected &#x26;&#x26; pageIndex &#x3e;= 0 &#x26;&#x26; pageIndex
+ &#x3c; this.props.pageCount) {
+      return this.props.<span class="apidocCodeKeywordSpan">hrefBuilder</span>(pageIndex + 1);
+    }
+  }
+}, {
+  key: &#x27;getPageElement&#x27;,
+  value: function getPageElement(index) {
+    return _react2.default.createElement(_PageView2.default, {
+      onClick: this.handlePageSelected.bind(null, index),
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.hrefBuilder.isRequired" id="apidoc.element.react-paginate.propTypes.hrefBuilder.isRequired">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.hrefBuilder.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-paginate.propTypes.initialPage" id="apidoc.module.react-paginate.propTypes.initialPage">module react-paginate.propTypes.initialPage</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.initialPage.initialPage" id="apidoc.element.react-paginate.propTypes.initialPage.initialPage">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>initialPage
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialPage = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.initialPage.isRequired" id="apidoc.element.react-paginate.propTypes.initialPage.isRequired">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.initialPage.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-paginate.propTypes.previousLabel" id="apidoc.module.react-paginate.propTypes.previousLabel">module react-paginate.propTypes.previousLabel</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.previousLabel.previousLabel" id="apidoc.element.react-paginate.propTypes.previousLabel.previousLabel">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.</span>previousLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">previousLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-paginate.propTypes.previousLabel.isRequired" id="apidoc.element.react-paginate.propTypes.previousLabel.isRequired">
+        function <span class="apidocSignatureSpan">react-paginate.propTypes.previousLabel.</span>isRequired
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isRequired = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
